@@ -1,0 +1,43 @@
+{
+  "name": "spectra",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ambient AI visualizer for autonomous coding agents and terminal-heavy workflows.",
+  "scripts": {
+    "bridge": "node scripts/spectra-bridge.mjs",
+    "dev": "next dev",
+    "emit": "node scripts/spectra-emit.mjs",
+    "emit:test": "node scripts/emit-test-events.mjs",
+    "hooks:install": "node scripts/install-git-hook.mjs",
+    "spectra": "node scripts/spectra-system.mjs",
+    "spectra:run": "node scripts/spectra-run.mjs",
+    "spectra:watch": "node scripts/spectra-watch.mjs",
+    "spectra:watch:codex": "node scripts/spectra-watch.mjs --profile codex",
+    "spectra:watch:projects": "node scripts/spectra-watch.mjs --profile projects",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/three": "^0.164.0",
+    "framer-motion": "^11.3.24",
+    "lucide-react": "^0.468.0",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.164.1",
+    "ws": "^8.20.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/ws": "^8.18.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3"
+  }
+}
