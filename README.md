@@ -1,0 +1,2 @@
+# spectra
+AI Visualizer
